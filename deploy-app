@@ -1,0 +1,4 @@
+# deploy the web app using Bicep
+az deployment group create --resource-group rg-arm-webapp-zee \
+   --template-file webapp-linux.json \
+   --parameters webAppName='arm-011'
